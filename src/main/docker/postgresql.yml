@@ -1,0 +1,11 @@
+version: '2'
+services:
+    lxremailreports-postgresql:
+        image: postgres:10.4
+        # volumes:
+        #     - ~/volumes/jhipster/LxrEmailReports/postgresql/:/var/lib/postgresql/data/
+        environment:
+            - POSTGRES_USER=LxrEmailReports
+            - POSTGRES_PASSWORD=
+        ports:
+            - 5432:5432
